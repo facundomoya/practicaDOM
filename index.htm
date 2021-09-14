@@ -53,11 +53,17 @@
     <main>
         <section class="bg-dark py-4">
             <article class="container text-light">
-                <h1 class="display-2">Practica de DOM</h1>
+                <h1 class="display-2" id="titulo">Practica de DOM</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, natus.</p>
-                <button class="btn btn-danger">Cambiar</button>
+                <button class="btn btn-danger" onclick="cambiarTitulo()">Cambiar</button>
             </article>
-
+        </section>
+        <section class="my-5 container">
+          <article>
+            <h2>Crear elementos HTML desde JavaScript</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti incidunt libero maxime cumque blanditiis, tempore atque ea. Illo, excepturi autem.</p>
+          </article>
+          <button class="btn btn-outline-success" onclick="verMas()" id="btnVerMas">Ver más...</button>
         </section>
     </main>
     <footer></footer>
