@@ -10,7 +10,7 @@ class Persona{
     }
 }
 
-let persona = new Persona()
+let persona = new Persona() // DONDE GENERO LA INTERFAZ DE USUARIO PARA EL OBJETO
 
 function mostrarDatos(){
     let prop1 = document.getElementById("input1")
