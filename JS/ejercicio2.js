@@ -10,7 +10,6 @@ class Persona{
     }
 }
 
-let persona = new Persona() // DONDE GENERO LA INTERFAZ DE USUARIO PARA EL OBJETO
 
 function mostrarDatos(){
     let prop1 = document.getElementById("input1")
@@ -34,8 +33,9 @@ function mostrarDatos(){
     let prop7 = document.getElementById("input7")
     this.nacimiento =prop7.value
     console.log("Año de nacimiento: "+prop7.value)
+    let person = new Persona(prop1.value,prop2.value,prop3.value,prop4.value,prop5.value,prop6.value,prop7.value)
+    console.log(person)
 }
-
 
 function esMayordeEdad(){
     if(this.edad >= 18){
