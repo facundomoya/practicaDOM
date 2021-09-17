@@ -33,8 +33,12 @@ function mostrarDatos(){
     let prop7 = document.getElementById("input7")
     this.nacimiento =prop7.value
     console.log("Año de nacimiento: "+prop7.value)
-    let person = new Persona(prop1.value,prop2.value,prop3.value,prop4.value,prop5.value,prop6.value,prop7.value)
-    console.log(person)
+
+}
+
+function crearObjeto(){
+  let person = new Persona(nombre,edad,dni,sexo,peso,altura,nacimiento)
+  console.log(person)
 }
 
 function esMayordeEdad(){
