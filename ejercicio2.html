@@ -1,33 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>Ejercicio 2</title>
-</head>
-<body>
-    <header></header>
-    <main>
-        <article class="bg-info p-5 container-fluid">
-            <h2 class="mb-3">FORMULARIO</h2>
-            <input type="text" placeholder="Ingrese el nombre" id="input1">
-            <input type="number" placeholder="Ingrese la edad" id="input2">
-            <input type="number" placeholder="Ingrese el DNI" id="input3">
-            <input type="text" placeholder="Ingrese el sexo (H o M)" id="input4">
-            <input type="number" placeholder="Ingrese el peso" id="input5">
-            <input type="number" placeholder="Ingrese la altura" id="input6">
-            <input type="number" placeholder="Ingrese el año de nacimiento" id="input7">
-            <button class="btn btn-success mt-4" onclick="mostrarDatos()">Mostrar datos en consola</button>
-            <button class="btn btn-danger mt-4" onclick="esMayordeEdad()">Mostrar si es mayor de edad</button>
-            <button class="btn btn-secondary mt-4" onclick="mostrarGeneracion()">Mostrar su generación</button>
-            <button class="btn btn-dark mt-4" onclick="crearObjeto()">Crear y mostrar objeto</button>
-
-        </article>
+  </head>
+  <body>
+    <header>Header</header>
+    <main class="min-vh-100 bg-info text-white">
+      <article class="p-5 container-fluid">
+        <h1 class="mb-3 text-center display-2">FORMULARIO</h1>
+        <!-- Formulario -->
+        <form>
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ingrese el nombre"
+                id="input1"
+                required
+              />
+            </div>
+            <div class="mb-3 col-6">
+              <label class="form-label">Edad</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Ingrese la edad"
+                id="input2"
+                required
+              />
+            </div>
+            <div class="mb-3 col-6">
+              <label class="form-label">DNI</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Ingrese el DNI"
+                id="input3"
+                required
+              />
+            </div>
+            <div class="mb-3 col-6">
+              <label class="form-label">Sexo</label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="input4"
+              >
+                <option selected value="">Ingrese el sexo (H o M)</option>
+                <option value="H">H</option>
+                <option value="M">M</option>
+              </select>
+            </div>
+            <div class="mb-3 col-6">
+              <label class="form-label">Peso</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Ingrese el peso"
+                id="input5"
+                required
+              />
+            </div>
+            <div class="mb-3 col-6">
+              <label class="form-label">Altura</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Ingrese la altura"
+                id="input6"
+                required
+              />
+            </div>
+            <div class="mb-3 col-6">
+              <label class="form-label">Año de nacimiento</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Ingrese el año de nacimiento"
+                id="input7"
+                required
+              />
+            </div>
+          </div>
+          <button
+            class="btn btn-primary mt-4"
+            type="submit"
+            onclick="CrearMostrarPersona()"
+          >
+            Crear y mostrar persona
+          </button>
+        </form>
+        <div class="row">
+          <!-- Dentro de este div se imprimen los datos cuando ejecutamos el metodo mostrarDatos() -->
+          <div class="col-6 pt-5" id="datosImpresos"></div>
+          <!-- Aqui estan los botones -->
+          <div class="col-6 d-grid gap-5 d-none" id="botonesPersona">
+            <button
+              type="button"
+              class="btn btn-primary mt-4 fs-3"
+              onclick="funcionEsMayordeEdad()"
+            >
+              Mostrar si es mayor de edad
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary mt-4 fs-3"
+              onclick="funcionMostrarGeneracion()"
+            >
+              Mostrar su generación
+            </button>
+          </div>
+        </div>
+      </article>
     </main>
-    <footer></footer>
+    <footer>Footer</footer>
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/ejercicio2.js"></script>
-</body>
+  </body>
 </html>
