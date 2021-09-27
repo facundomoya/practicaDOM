@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: blue;
+}
+
+.titulo1{
+    font-size: 35px;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 30px 30px;
+    margin: 0px 400px;
+}
+
+.titulo2{
+    font-size: 80px;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 30px 30px;
+    margin: 0px 400px;
+}
+
+.seconds{
+    font-size: 35px;
+}
+
+.pm{
+    position: relative;
+    bottom: 30px;
+    left: 7px;
+}
+
+.seg{
+    position: relative;
+    right: 45px;
+}
